@@ -73,7 +73,7 @@
 		<div class="scroll">SCROLL</div>
 	</section>
 
-	<section class="scene scene2">
+	<section class="scene scene2" id="about">
 		<div class="wrapper">
 			<div class="box pc">
 				<div class="svg pc"></div>
@@ -97,7 +97,7 @@
 		</div>
 	</section>
 
-	<section class="scene scene3">
+	<section class="scene scene3" id="global">
 		<div class="wrapper">
 			<div class="world">
 				<div class="headline">
@@ -283,7 +283,7 @@
 		</div>
 	</section>
 
-	<section class="scene scene5">
+	<section class="scene scene5" id="whatwedo">
 		<div class="wrapper">
 			<div class="box">
 				<div class="wrapper">
@@ -364,7 +364,7 @@
 			</div>
 		</div>
 	</section>
-	<section class="scene scene6">
+	<section class="scene scene6" id="alliancepartner">
 		<div class="wrapper">
 			<h2>Alliance <br class="sp">Partner</h2>
 			<ul>
@@ -525,7 +525,7 @@
 			</ul>
 		</div>
 	</section>
-	<section class="scene scene7">
+	<section class="scene scene7" id="company">
 		<div class="wrapper">
 			<h2 class="sp">Company</h2>
 			<div class="box">
@@ -600,16 +600,16 @@
 	</section>
 	<section class="scene scene8">
 		<div class="wrapper">
-			<h2>Contact</h2>
+			<h2 id="contact" id="contact">Contact</h2>
 			<script src="https://sdk.form.run/js/v2/embed.js"></script>
 			<div
 				class="form formrun-embed"
 				data-formrun-form="@hubanice"
 				data-formrun-redirect="true">
-			</div>
-			
+			</div>			
 			<footer>
-				<div class="logo"><img src="/assets/img/logo_footer.png"></div>
+				<div class="logo"><a href="/"><img src="/assets/img/logo_footer.png"></a></div>
+				<p><a href="/privacypolicy/">プライバシーポリシー</a></p>
 				<small>All content © Hub A Nice Inc., 2019. <br class="sp">All rights reserved.</small>
 			</footer>
 		</div>
@@ -632,6 +632,18 @@
 <script src="/assets/js/stats.js"></script>
 <script src="/assets/js/particles.js"></script>
 <script src="/assets/js/particlesjs.js"></script>
+
+<script>
+$(window).on('load', function() {
+	var hash = window.location.hash;
+	var position = $(hash).offset().top;
+	function scroll(position){
+		$('html, body').animate({
+			scrollTop : position
+		}, 100);
+	}
+	scroll(position);
+});
 
 </body>
 </html>
