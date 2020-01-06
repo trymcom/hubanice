@@ -1,0 +1,3 @@
+@function getVW($px) {
+	@return $px / $viewport * 100 * 1vw; 
+}

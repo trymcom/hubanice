@@ -1,0 +1,22 @@
+body {
+  font-size: getLimit(14);
+}
+
+#Header {
+  padding: getLimit(40) getLimit(60);
+}
+
+#Header .logo {
+  width: getLimit(180);
+}
+
+#Header .menus {
+  margin-top: getLimit(14);
+}
+
+#Header .menus li {
+  font-size: getLimit(18);
+  margin-left: getLimit(40);
+}
+
+/*# sourceMappingURL=../map/limit/common.css.map */

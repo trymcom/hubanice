@@ -1,0 +1,7 @@
+@function getVW($px) {
+	@return $px / $viewport * 100 * 1vw; 
+}
+
+@function getLimit($px) {
+	@return $px * 1px; 
+}
