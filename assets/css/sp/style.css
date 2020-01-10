@@ -139,7 +139,7 @@
 }
 
 #Main .scene {
-  height: auto;
+  height: auto !important;
   padding: 20vw 8vw 20vw 8vw;
 }
 

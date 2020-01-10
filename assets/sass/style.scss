@@ -170,7 +170,7 @@ a {
 				margin-left: getVW(40);
 
 				&.white {
-					color: #272a6d;
+					color: #21242d;
 				}
 			}
 		}
@@ -188,7 +188,7 @@ a {
 	}
 
 	.scene {
-		height: 100vh;
+		height: 100vh !important;
 		padding: getVW(94) getVW(80) getVW(40) getVW(80);
 		position: relative;
 
@@ -241,10 +241,15 @@ a {
 		}
 
 		.first {
+			align-items: center;
+			display: flex;
 			height: 100%;
+			justify-content: center;
 			width: 100%;
 
 			.svg {
+				max-height: 350px;
+				max-width: 740px;
 				height: 100%;
 				width: 100%;
 			}
@@ -629,6 +634,7 @@ a {
 			max-height: 100%;
 			overflow: auto;
 			padding: getVW(94) getVW(80) getVW(40) getVW(80);
+			pointer-events: all;
 			width: 100%;
 		}
 
@@ -644,6 +650,7 @@ a {
 			display: flex;
 			flex-wrap: wrap;
 			justify-content: space-between;
+			pointer-events: none;
 
 			li {
 				display: flex;
@@ -668,6 +675,7 @@ a {
 
 					dd {
 						font-size: getVW(14);
+						white-space: nowrap;
 					}
 				}
 			}

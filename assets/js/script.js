@@ -81,7 +81,17 @@ $(function () {
 		initPC();
 
 		$(".scene .wrapper").on("wheel", function (e) {
+			var delta	=	e.originalEvent.deltaY ? -(e.originalEvent.deltaY) : e.originalEvent.wheelDelta ? e.originalEvent.wheelDelta : -(e.originalEvent.detail);
 
+			if(delta < 0){
+				if($(this).scrollTop() <= $(this).innerHeight() - $(this).parent().innerHeight()) {
+					e.stopPropagation();
+				}
+			} else {
+				if($(this).scrollTop() > 0) {
+					e.stopPropagation();
+				}
+			}
 		});
 
 		//ホームアニメーション
@@ -186,7 +196,7 @@ $(function () {
 				if(index != 0) {
 					$("#Header .logo").show();
 				}
-
+				
 				if(index == 7) {
 					$("#Header .change").addClass("white");
 				}
@@ -228,15 +238,15 @@ $(function () {
 		}).trigger("scroll");
 
 		$("#Header .move").on("click.init", function () {
-			if($("body").css("overflow") != "hidden") {
+			var index	=	$(this).attr("data-move");
+
+			if($("body").css("overflow") != "hidden" && index != 7) {
 				$.scrollify(options);
 
 				for(var i = 1; i <= 8; i++) {
 					$(".scene"+ i).css({opacity: 0});
 				}
 			}
-			
-			var index	=	$(this).attr("data-move");
 			
 			$.scrollify.move(parseInt(index));
 		});

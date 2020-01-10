@@ -183,7 +183,7 @@ a {
 }
 
 #Main .scene {
-  height: 100vh;
+  height: 100vh !important;
   padding: 6.91176vw 5.88235vw 2.94118vw 5.88235vw;
   position: relative;
 }
@@ -264,11 +264,19 @@ a {
 }
 
 #Main .scene1 .first {
-  height: 350px;
-  width: 740px;
+  -webkit-box-align: center;
+  align-items: center;
+  display: -webkit-box;
+  display: flex;
+  height: 100%;
+  -webkit-box-pack: center;
+  justify-content: center;
+  width: 100%;
 }
 
 #Main .scene1 .first .svg {
+  max-height: 350px;
+  max-width: 740px;
   height: 100%;
   width: 100%;
 }
@@ -696,6 +704,7 @@ a {
   max-height: 100%;
   overflow: auto;
   padding: 6.91176vw 5.88235vw 2.94118vw 5.88235vw;
+  pointer-events: all;
   width: 100%;
 }
 
@@ -713,6 +722,7 @@ a {
   flex-wrap: wrap;
   -webkit-box-pack: justify;
   justify-content: space-between;
+  pointer-events: none;
 }
 
 #Main .scene6 ul li {
@@ -739,6 +749,7 @@ a {
 
 #Main .scene6 ul li dl dd {
   font-size: 1.02941vw;
+  white-space: nowrap;
 }
 
 #Main .scene7 {
@@ -863,7 +874,7 @@ a {
 
 #Main .scene8 {
   background: #ffffff;
-  padding: 6vw 0vw 0vw 0vw;
+  padding: 6.91176vw 0vw 0vw 0vw;
 }
 
 #Main .scene8 > .wrapper {
@@ -909,11 +920,6 @@ a {
 #Main .scene8 footer small {
   font-family: "DM Serif Display";
   font-size: 0.88235vw;
-}
-
-#Main .scene8 footer p {
-  margin-bottom: 2vw;
-  cursor: pointer;
 }
 
 /* モーダル */
@@ -1230,18 +1236,18 @@ a {
     width: 42px;
   }
   #Main .scene8 {
-    padding: 50px 0px 0px 0px;
+    padding: 94px 0px 0px 0px;
   }
   #Main .scene8 h2 {
     font-size: 72px;
     margin: 0px 0px 0px 0px;
   }
   #Main .scene8 footer {
-    height: 380px !important;
-    padding: 70px 10px 150px 10px;
+    height: 300px !important;
+    padding: 70px 10px 70px 10px;
   }
   #Main .scene8 footer .logo {
-    margin-bottom: 40px;
+    margin-bottom: 50px;
   }
   #Main .scene8 footer .logo img {
     width: 300px;
@@ -1292,15 +1298,6 @@ a {
   }
   #Modal > .inner .contents section .explain p {
     margin-top: 30px;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  #Main .scene8 footer p {
-    font-size: 2.6vw;
-  }
-  #Main .scene8 footer small {
-    font-size: 1.5vw;
   }
 }
 

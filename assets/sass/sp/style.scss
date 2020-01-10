@@ -110,7 +110,7 @@
 	}
 
 	.scene {
-		height: auto;
+		height: auto !important;
 		padding: getVW(150) getVW(60) getVW(150) getVW(60);
 
 		> .wrapper {

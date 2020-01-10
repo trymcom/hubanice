@@ -195,7 +195,7 @@
 
 					<dl>
 						<dd class="image"><img src="/assets/img/photo_slider3.jpg"></dd>
-						<dt>リアルエステート 関連事業</dt>
+						<dt>リアルエステート関連事業</dt>
 						<dd>国内外で不動産物件の開発や取引、サービスの提供</dd>
 					</dl>
 					
@@ -239,157 +239,57 @@
 		<div class="wrapper">
 			<h2>Alliance <br class="sp">Partner</h2>
 			<ul>
+				<%
+
+					var partners	=	[
+						['CEO','H-Tetsuji','','japan'],
+						['Executive Assistant','N-Hisami','','japan'],
+						['Chief Director','K-Mina','アパレル関連事業','japan'],
+						['Designer','T-Goo','アパレル関連事業','korea'],
+						['Designer','B-Lee','アパレル関連事業','korea'],
+						['Director/Marketing','K-Boram','アパレル関連事業','korea'],
+						['Sales Rep','N-Tomoyuki','アパレル関連事業','japan'],
+						['Showroom/media','T-Takayuki','アパレル関連事業','japan'],
+						['Production Control','A-Kenji','アパレル関連事業','japan'],
+						['Video','N-Daiki','アパレル関連事業','japan'],
+						['Photographer','N-Joe','アパレル関連事業','korea'],
+						['Hair Make Up','S-Youn','アパレル関連事業','korea'],
+						['Marketing','C-Seungwoo','アパレル関連事業','japan'],
+						['Marketing','Ann','アパレル関連事業','japan'],
+						['Chief Director','M-Kazuki','プロダクト関連事業','japan'],
+						['Managing Director','T-Makoto','プロダクト関連事業','germany'],
+						['Funder','W-Sophie','プロダクト関連事業','germany'],
+						['Funder','M-Stefan','プロダクト関連事業','japan'],
+						['Finance','B-Larissa','プロダクト関連事業','germany'],
+						['Interpreter','K-Toyoko','プロダクト関連事業','germany'],
+						['Chief Director','H-Wataru','美容関連事業','japan'],
+						['Editor','M-Keiko','美容関連事業','japan'],
+						['Editor','S-Jiro','美容関連事業','japan'],
+						['PR','H-Tae','美容関連事業','japan'],
+						['OEM','T-Shinya','美容関連事業','japan'],
+						['Management','H-Madori','リアルエステート関連事業','philippines'],
+						['CENTURY','P-Rizaldy','リアルエステート関連事業','philippines'],
+						['CENTURY','R-Rod','リアルエステート関連事業','philippines'],
+						['CENTURY','D-Veia','リアルエステート関連事業','philippines'],
+						['MSC','K-Shuichi','リアルエステート関連事業','philippines'],
+						['Management','F-Luis','その他関連事業','usa'],
+						['Funder','W-Lee','その他関連事業','usa'],
+					];
+				%>
+				<% partners.forEach(function (partner) { %>
+
 				<li>
-					<div class="image"><img src="/assets/img/flag_japan.png"></div>
+					<div class="image"><img src="/assets/img/flag_<%= partner[3] %>.png"></div>
 					<dl>
-						<dt>CEO/Founder</dt>
+						<dt><%= partner[0] %></dt>
 						<dd>
-							TETSUJI . H<br class="pc">
-							アパレル事業
+							<%= partner[1] %><br class="pc">
+							<%= partner[2] %>
 						</dd>
 					</dl>
 				</li>
 
-				<li>
-					<div class="image"><img src="/assets/img/flag_germany.png"></div>
-					<dl>
-						<dt>Product Manager</dt>
-						<dd>
-							TONY . S<br class="pc">
-							アパレル事業
-						</dd>
-					</dl>
-				</li>
-
-				<li>
-					<div class="image"><img src="/assets/img/flag_usa.png"></div>
-					<dl>
-						<dt>Slaes Manager</dt>
-						<dd>
-							PETER . P<br>
-							アパレル事業
-						</dd>
-					</dl>
-				</li>
-
-				<li>
-					<div class="image"><img src="/assets/img/flag_japan.png"></div>
-					<dl>
-						<dt>CEO/Founder</dt>
-						<dd>
-							TETSUJI . H<br class="pc">
-							アパレル事業
-						</dd>
-					</dl>
-				</li>
-				<li>
-					<div class="image"><img src="/assets/img/flag_japan.png"></div>
-					<dl>
-						<dt>CEO/Founder</dt>
-						<dd>
-							TETSUJI . H<br class="pc">
-							アパレル事業
-						</dd>
-					</dl>
-				</li>
-
-				<li>
-					<div class="image"><img src="/assets/img/flag_germany.png"></div>
-					<dl>
-						<dt>Product Manager</dt>
-						<dd>
-							TONY . S<br class="pc">
-							アパレル事業
-						</dd>
-					</dl>
-				</li>
-
-				<li>
-					<div class="image"><img src="/assets/img/flag_usa.png"></div>
-					<dl>
-						<dt>Slaes Manager</dt>
-						<dd>
-							PETER . P<br>
-							アパレル事業
-						</dd>
-					</dl>
-				</li>
-
-				<li>
-					<div class="image"><img src="/assets/img/flag_japan.png"></div>
-					<dl>
-						<dt>CEO/Founder</dt>
-						<dd>
-							TETSUJI . H<br class="pc">
-							アパレル事業
-						</dd>
-					</dl>
-				</li>
-				<li>
-					<div class="image"><img src="/assets/img/flag_japan.png"></div>
-					<dl>
-						<dt>CEO/Founder</dt>
-						<dd>
-							TETSUJI . H<br class="pc">
-							アパレル事業
-						</dd>
-					</dl>
-				</li>
-
-				<li>
-					<div class="image"><img src="/assets/img/flag_germany.png"></div>
-					<dl>
-						<dt>Product Manager</dt>
-						<dd>
-							TONY . S<br class="pc">
-							アパレル事業
-						</dd>
-					</dl>
-				</li>
-
-				<li>
-					<div class="image"><img src="/assets/img/flag_usa.png"></div>
-					<dl>
-						<dt>Slaes Manager</dt>
-						<dd>
-							PETER . P<br>
-							アパレル事業
-						</dd>
-					</dl>
-				</li>
-
-				<li>
-					<div class="image"><img src="/assets/img/flag_japan.png"></div>
-					<dl>
-						<dt>CEO/Founder</dt>
-						<dd>
-							TETSUJI . H<br class="pc">
-							アパレル事業
-						</dd>
-					</dl>
-				</li>
-				<li>
-					<div class="image"><img src="/assets/img/flag_japan.png"></div>
-					<dl>
-						<dt>CEO/Founder</dt>
-						<dd>
-							TETSUJI . H<br class="pc">
-							アパレル事業
-						</dd>
-					</dl>
-				</li>
-
-				<li>
-					<div class="image"><img src="/assets/img/flag_germany.png"></div>
-					<dl>
-						<dt>Product Manager</dt>
-						<dd>
-							TONY . S<br class="pc">
-							アパレル事業
-						</dd>
-					</dl>
-				</li>
-
+				<% }); %>
 				<li></li>
 				<li></li>
 
@@ -411,6 +311,15 @@
 							</dd>
 						</dl>
 					</li>
+					<li>
+						<dl>
+							<dt>代表</dt>
+							<dd>
+								TETSUJI HASHIMOTO
+							</dd>
+						</dl>
+					</li>
+					
 					<li>
 						<dl>
 							<dt>所在地</dt>
@@ -467,7 +376,7 @@
 			<script src="https://sdk.form.run/js/v2/embed.js"></script>
 			<div
 				class="form formrun-embed"
-				data-formrun-form="@funabashi-33"
+				data-formrun-form="@hubanice"
 				data-formrun-redirect="true">
 			</div>
 			
