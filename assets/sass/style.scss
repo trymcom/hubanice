@@ -232,7 +232,6 @@ a {
 			}
 		}
 
-
 		> .wrapper {
 			align-items: center;
 			display: flex;
@@ -309,6 +308,8 @@ a {
 			width: 50%;
 
 			svg {
+				max-height: 350px;
+				max-width: 740px;
 				min-height: 50vh;
 
 			}

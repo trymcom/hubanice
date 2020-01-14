@@ -84,7 +84,10 @@ $(function () {
 			var delta	=	e.originalEvent.deltaY ? -(e.originalEvent.deltaY) : e.originalEvent.wheelDelta ? e.originalEvent.wheelDelta : -(e.originalEvent.detail);
 
 			if(delta < 0){
-				if($(this).scrollTop() <= $(this).innerHeight() - $(this).parent().innerHeight()) {
+				var scrollHeight	=	$(this).children(".inner").height();
+				var scrollPosition	=	$(this).height() + $(this).scrollTop();
+
+				if((scrollHeight - scrollPosition) / scrollHeight >= 0.05) {
 					e.stopPropagation();
 				}
 			} else {

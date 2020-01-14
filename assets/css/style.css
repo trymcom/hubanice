@@ -342,6 +342,8 @@ a {
 }
 
 #Main .scene2 .box svg {
+  max-height: 350px;
+  max-width: 740px;
   min-height: 50vh;
 }
 
