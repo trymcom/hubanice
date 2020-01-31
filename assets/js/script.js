@@ -1,5 +1,5 @@
 //オープニング
-var DelayLogo		=	8; //ロゴの表示時間(秒)
+var DelayLogo		=	6.5; //ロゴの表示時間(秒)
 var DelayBackground	=	5; //背景画像の表示時間(秒)
 var svgs			=	{};
 
