@@ -1304,3 +1304,31 @@ a {
 }
 
 /*# sourceMappingURL=map/style.css.map */
+
+
+#Main .scene8 footer p {
+  margin-bottom: 2vw;
+  cursor: pointer;
+}
+#Main .scene8 footer {
+  height: 380px !important;
+  padding: 70px 10px 150px 10px;
+}
+#Main .scene8 footer .logo {
+  margin-bottom: 40px;
+}
+@media screen and (max-width: 768px) {
+  #Main .scene8 footer p {
+    font-size: 2.6vw;
+  }
+  #Main .scene8 footer small {
+    font-size: 1.5vw;
+  }
+  #Main .scene8 footer {
+    height: 230px !important;
+    padding: 40px 10px 150px 10px;
+  }
+  #Main .scene8 footer .logo img {
+    width: 36vw;
+}
+}
